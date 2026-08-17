@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>KamenRider</defName>
+    <label>假面骑士</label>
+    <parent>Root</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>KamenRider_Fullbottles</defName>
+    <label>满装瓶罐</label>
+    <parent>Manufactured</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>KamenRider_Equipment</defName>
+    <label>骑士装备</label>
+    <parent>KamenRider</parent>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+  </ThingCategoryDef>
+
+</Defs>

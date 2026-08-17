@@ -1,0 +1,19 @@
+﻿<LanguageData>
+
+  <!-- Fullbottle Items -->
+  <Fullbottle_Rabbit.label>兔子满装瓶罐</Fullbottle_Rabbit.label>
+  <Fullbottle_Rabbit.description>蕴含兔子能力的满装瓶罐。摇动后获得超高速和敏捷增益。</Fullbottle_Rabbit.description>
+
+  <Fullbottle_Tank.label>坦克满装瓶罐</Fullbottle_Tank.label>
+  <Fullbottle_Tank.description>蕴含坦克能力的满装瓶罐。摇动后获得强大防御和护甲增益。</Fullbottle_Tank.description>
+
+  <!-- Fullbottle Buffs -->
+  <FullbottleBuff_Rabbit.label>兔子瓶增益</FullbottleBuff_Rabbit.label>
+  <FullbottleBuff_Rabbit.description>兔子满装瓶罐的能量增强！速度和敏捷大幅提升。</FullbottleBuff_Rabbit.description>
+  <FullbottleBuff_Rabbit.stages.stage0.label>兔子瓶增益</FullbottleBuff_Rabbit.stages.stage0.label>
+
+  <FullbottleBuff_Tank.label>坦克瓶增益</FullbottleBuff_Tank.label>
+  <FullbottleBuff_Tank.description>坦克满装瓶罐的能量增强！防御和护甲大幅提升。</FullbottleBuff_Tank.description>
+  <FullbottleBuff_Tank.stages.stage0.label>坦克瓶增益</FullbottleBuff_Tank.stages.stage0.label>
+
+</LanguageData>

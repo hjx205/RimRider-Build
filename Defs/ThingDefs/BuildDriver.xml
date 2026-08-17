@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>BuildDriver</defName>
+        <label>Build驱动器</label>
+        <description>假面骑士Build的变身腰带。穿戴后可插入满装瓶罐进行变身。
+将满装瓶罐放入背包，然后在操作栏选择左右瓶罐，即可变身为Build！</description>
+        <thingClass>Apparel</thingClass>
+        <graphicData>
+            <texPath>Things/Item/BuildDriver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.0, 1.0)</drawSize>
+        </graphicData>
+        <alwaysHaulable>true</alwaysHaulable>
+        <stackLimit>1</stackLimit>
+        <techLevel>Industrial</techLevel>
+        <tradeability>All</tradeability>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>1.5</Mass>
+            <Flammability>0.2</Flammability>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+        </apparel>
+        <comps>
+            <li Class="RimworldRider.BuildDriver.CompProperties_BuildDriver"/>
+        </comps>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+                <Intellectual>8</Intellectual>
+            </skillRequirements>
+            <workAmount>45000</workAmount>
+            <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+        </recipeMaker>
+        <costList>
+            <Steel>120</Steel>
+            <Plasteel>40</Plasteel>
+            <Gold>20</Gold>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+</Defs>

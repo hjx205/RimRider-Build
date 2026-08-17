@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================================================================== -->
+  <!-- 满装瓶罐 - 摇动音效                                                 -->
+  <!-- 默认使用游戏内置音效（金属点击声+机械启动声）                          -->
+  <!-- 若要替换为自定义音效:                                                -->
+  <!-- 1) 将 .ogg 或 .wav 文件放入 RimWorld/Data/Core/Sounds/ 下对应文件夹  -->
+  <!-- 2) 修改下方 clipFolderPath 指向你的音频文件夹                         -->
+  <!-- ================================================================== -->
+  <SoundDef>
+    <defName>Fullbottle_Shake</defName>
+    <context>MapOnly</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Fullbottle_Shake</clipPath>
+          </li>
+        </grains>
+        <onCamera>true</onCamera>
+        <volumeRange>80~80</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Fullbottle_Shake_Driver</defName>
+    <context>MapOnly</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Fullbottle_Shake_Driver</clipPath>
+          </li>
+        </grains>
+        <onCamera>true</onCamera>
+        <volumeRange>80~80</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Fullbottle_Rabbit</defName>
+    <context>MapOnly</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Fullbottle_Rabbit</clipPath>
+          </li>
+        </grains>
+        <onCamera>true</onCamera>
+        <volumeRange>80~80</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Fullbottle_Tank</defName>
+    <context>MapOnly</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Fullbottle_Tank</clipPath>
+          </li>
+        </grains>
+        <onCamera>true</onCamera>
+        <volumeRange>80~80</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

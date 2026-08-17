@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================================================================== -->
+  <!-- Rabbit Jump (兔子跳跃) - 复用原版Biotech的Verb_CastAbilityJump         -->
+  <!-- ================================================================== -->
+  <AbilityDef Name="BuildRider_RabbitJump">
+    <defName>BuildRider_RabbitJump</defName>
+    <label>rabbit jump</label>
+    <description>Rabbit-like super jump using the Rabbit Fullbottle's power.</description>
+    <iconPath>UI/Abilities/Rabbit</iconPath>
+    <cooldownTicksRange>600</cooldownTicksRange>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <minRange>5.9</minRange>
+      <range>9.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <flyWithCarriedThing>true</flyWithCarriedThing>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <comps>
+      <li Class="RimworldRider.Ability.CompProperties_AbilityBuildHide">
+        <FullbottleBuff>FullbottleBuff_Rabbit</FullbottleBuff>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef Name="BuildRider_TankTreads">
+    <defName>BuildRider_TankTreads</defName>
+    <label>tank treads</label>
+    <description>Using the Tank Fullbottle's power, attack using the tracks on your feet</description>
+    <iconPath>UI/Abilities/Tank</iconPath>
+    <cooldownTicksRange>600</cooldownTicksRange>
+    <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>1</range>
+      <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+      <targetParams>
+          <canTargetSelf>false</canTargetSelf>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="RimworldRider.Ability.CompProperties_AbilityBuildHide">
+        <FullbottleBuff>FullbottleBuff_Tank</FullbottleBuff>
+      </li>
+      <li Class="RimworldRider.Ability.CompProperties_TankTreads" />
+    </comps>
+  </AbilityDef>
+
+</Defs>

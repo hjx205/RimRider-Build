@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================================================================== -->
+  <!-- Hazard Level（危险等级）Hediff定义                                    -->
+  <!-- 7个阶段映射 HL 1.0 ~ HL 7.0                                         -->
+  <!-- severity 0.0~1.0 对应等级 1.0~7.0                                   -->
+  <!-- ================================================================== -->
+  <HediffDef>
+    <defName>HazardLevel</defName>
+    <label>hazard level</label>
+    <description>假面骑士Build的变身系统核心指标。体现了骑士对满装瓶罐能量的适应和控制能力。
+战斗可以使危险等级提升，获得更强的战斗属性。
+\n等级范围: 1.0 ~ 7.0</description>
+    <hediffClass>RimworldRider.HazardLevel.Hediff_HazardLevel</hediffClass>
+    <isBad>false</isBad>
+    <initialSeverity>0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="RimworldRider.HazardLevel.CompProperties_HazardLevel">
+        <xpRequirements>
+          <li>100</li>
+          <li>250</li>
+          <li>500</li>
+          <li>1000</li>
+          <li>2000</li>
+          <li>4000</li>
+        </xpRequirements>
+      </li>
+    </comps>
+    <stages>
+      <!-- ===== HL 1.0 ===== -->
+      <li>
+        <minSeverity>0.0</minSeverity>
+        <label>HL 1.0</label>
+        <statFactors>
+          <MeleeDamageFactor>1.00</MeleeDamageFactor>
+          <MoveSpeed>1.00</MoveSpeed>
+          <MeleeCooldownFactor>1.00</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.8</IncomingDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>1</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+
+      <!-- ===== HL 2.0 ===== -->
+      <li>
+        <minSeverity>0.143</minSeverity>
+        <label>HL 2.0</label>
+        <statFactors>
+          <MeleeDamageFactor>1.05</MeleeDamageFactor>
+          <MoveSpeed>1.03</MoveSpeed>
+          <MeleeCooldownFactor>0.97</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.7</IncomingDamageFactor>
+          <InjuryHealingFactor>1.4</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>4</MeleeDodgeChance>
+          <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.02</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+
+      <!-- ===== HL 3.0 ===== -->
+      <li>
+        <minSeverity>0.286</minSeverity>
+        <label>HL 3.0</label>
+        <statFactors>
+          <MeleeDamageFactor>1.10</MeleeDamageFactor>
+          <MoveSpeed>1.05</MoveSpeed>
+          <MeleeCooldownFactor>0.95</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.6</IncomingDamageFactor>
+          <InjuryHealingFactor>1.9</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>9</MeleeDodgeChance>
+          <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.05</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+
+      <!-- ===== HL 4.0 ===== -->
+      <li>
+        <minSeverity>0.429</minSeverity>
+        <label>HL 4.0</label>
+        <statFactors>
+          <MeleeDamageFactor>1.18</MeleeDamageFactor>
+          <MoveSpeed>1.08</MoveSpeed>
+          <MeleeCooldownFactor>0.92</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.5</IncomingDamageFactor>
+          <InjuryHealingFactor>2.6</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>16</MeleeDodgeChance>
+          <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.08</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+
+      <!-- ===== HL 5.0 ===== -->
+      <li>
+        <minSeverity>0.571</minSeverity>
+        <label>HL 5.0</label>
+        <statFactors>
+          <MeleeDamageFactor>1.28</MeleeDamageFactor>
+          <MoveSpeed>1.12</MoveSpeed>
+          <MeleeCooldownFactor>0.88</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.4</IncomingDamageFactor>
+          <InjuryHealingFactor>3.5</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>25</MeleeDodgeChance>
+          <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.14</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.12</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+
+      <!-- ===== HL 6.0 ===== -->
+      <li>
+        <minSeverity>0.714</minSeverity>
+        <label>HL 6.0</label>
+        <statFactors>
+          <MeleeDamageFactor>1.40</MeleeDamageFactor>
+          <MoveSpeed>1.16</MoveSpeed>
+          <MeleeCooldownFactor>0.84</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.3</IncomingDamageFactor>
+          <InjuryHealingFactor>4.6</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>36</MeleeDodgeChance>
+          <ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.20</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+
+      <!-- ===== HL 7.0 ===== -->
+      <li>
+        <minSeverity>0.857</minSeverity>
+        <label>HL 7.0</label>
+        <statFactors>
+          <MeleeDamageFactor>1.55</MeleeDamageFactor>
+          <MoveSpeed>1.20</MoveSpeed>
+          <MeleeCooldownFactor>0.80</MeleeCooldownFactor>
+          <IncomingDamageFactor>0.2</IncomingDamageFactor>
+          <InjuryHealingFactor>5.9</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>49</MeleeDodgeChance>
+          <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.30</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

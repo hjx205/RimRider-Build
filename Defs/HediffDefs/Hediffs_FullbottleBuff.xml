@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================================================================== -->
+  <!-- Fullbottle Handler (隐形Hediff，追踪共用冷却)                          -->
+  <!-- ================================================================== -->
+  <HediffDef>
+    <defName>FullbottleHandler</defName>
+    <label>fullbottle handler</label>
+    <description>满装瓶罐冷却追踪系统。</description>
+    <hediffClass>RimworldRider.Fullbottle.Hediff_FullbottleHandler</hediffClass>
+    <isBad>false</isBad>
+    <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <maxSeverity>0.5</maxSeverity>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+
+  <HediffDef Name="FullbottleBuff_Base" Abstract="True">
+    <hediffClass>RimworldRider.Fullbottle.Hediff_FullbottleBuff</hediffClass>
+    <isBad>false</isBad>
+    <maxSeverity>0.6</maxSeverity>
+    <initialSeverity>0.1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- ================================================================== -->
+  <!-- Rabbit 兔子瓶增益 (持续1小时 = 2500 ticks)                            -->
+  <!-- ================================================================== -->
+  <HediffDef ParentName="FullbottleBuff_Base">
+    <defName>FullbottleBuff_Rabbit</defName>
+    <label>满装瓶罐增益</label>
+    <description>兔子满装瓶罐的能量增强！速度和敏捷大幅提升。</description>
+    <defaultLabelColor>(0.7, 0.0, 0.0)</defaultLabelColor>
+    <stages>
+      <li>
+        <label>兔子</label>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <MoveSpeed>1.20</MoveSpeed>
+          <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>15</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+      <li>
+        <label>Build装甲-兔子</label>
+        <minSeverity>0.2</minSeverity>
+        <statFactors>
+          <MoveSpeed>1.25</MoveSpeed>
+          <MeleeCooldownFactor>0.7</MeleeCooldownFactor>
+        </statFactors>
+        <statOffsets>
+          <MeleeDodgeChance>15</MeleeDodgeChance>
+        </statOffsets>
+      </li>
+    </stages>
+    <abilities>
+      <li>BuildRider_RabbitJump</li>
+    </abilities>
+  </HediffDef>
+
+  <!-- ================================================================== -->
+  <!-- Tank 坦克瓶增益 (持续1小时 = 2500 ticks)                              -->
+  <!-- ================================================================== -->
+  <HediffDef ParentName="FullbottleBuff_Base">
+    <defName>FullbottleBuff_Tank</defName>
+    <label>满装瓶罐增益</label>
+    <description>坦克满装瓶罐的能量增强！防御和护甲大幅提升。</description>
+    <defaultLabelColor>(0.0, 0.5, 0.8)</defaultLabelColor>
+    <stages>
+      <li>
+        <label>坦克</label>
+        <minSeverity>0</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>0.7</IncomingDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.3</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+      <li>
+        <label>build装甲-坦克</label>
+        <minSeverity>0.2</minSeverity>
+        <statFactors>
+          <IncomingDamageFactor>0.5</IncomingDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.5</ArmorRating_Heat>
+        </statOffsets>
+      </li>
+    </stages>
+    <abilities>
+      <li>BuildRider_TankTreads</li>
+    </abilities>
+  </HediffDef>
+
+</Defs>

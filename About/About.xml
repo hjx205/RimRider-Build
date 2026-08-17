@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Kamen Rider Build - 假面骑士Build</name>
+  <author>Hjx</author>
+  <packageId>RimworldRider.KamenRiderBuild</packageId>
+  <url></url>
+  <description>在 RimWorld 中重现假面骑士Build的世界！
+
+包含：
+- Build驱动器与满装瓶罐系统
+- Best Match 组合机制
+- Hazard Level 进化系统
+- 钻头粉碎者等专用武器
+- Smash 敌人阵营与难波重工派系
+- Pandora Box 相关事件
+
+[Mod要求]
+- 需要 RimWorld 1.6 或更高版本
+- 建议配合 HugsLib 使用</description>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies />
+</ModMetaData>

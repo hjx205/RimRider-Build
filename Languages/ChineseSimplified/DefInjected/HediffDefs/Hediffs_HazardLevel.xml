@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- HazardLevel Hediff -->
+  <HazardLevel.label>危险等级</HazardLevel.label>
+  <HazardLevel.description>假面骑士Build的变身系统核心指标。体现了骑士对满装瓶罐能量的适应和控制能力。
+战斗可以使危险等级提升，获得更强的战斗属性。
+等级范围: 1.0 ~ 7.0</HazardLevel.description>
+
+  <!-- Stages -->
+  <HazardLevel.stages.stage0.label>HL 1.0</HazardLevel.stages.stage0.label>
+  <HazardLevel.stages.stage0.description>初始状态，尚未展现出特殊能力。</HazardLevel.stages.stage0.description>
+
+  <HazardLevel.stages.stage1.label>HL 2.0</HazardLevel.stages.stage1.label>
+  <HazardLevel.stages.stage1.description>基础适应阶段。身体开始适应星云气体的能量。</HazardLevel.stages.stage1.description>
+
+  <HazardLevel.stages.stage2.label>HL 3.0</HazardLevel.stages.stage2.label>
+  <HazardLevel.stages.stage2.description>稳定阶段。能够熟练运用基础形态的战斗能力。</HazardLevel.stages.stage2.description>
+
+  <HazardLevel.stages.stage3.label>HL 4.0</HazardLevel.stages.stage3.label>
+  <HazardLevel.stages.stage3.description>强化阶段。体能得到显著增强，能承受更强的战斗冲击。</HazardLevel.stages.stage3.description>
+
+  <HazardLevel.stages.stage4.label>HL 5.0</HazardLevel.stages.stage4.label>
+  <HazardLevel.stages.stage4.description>精锐阶段。已具备较高的战斗素质，足以驾驭更强大的形态。</HazardLevel.stages.stage4.description>
+
+  <HazardLevel.stages.stage5.label>HL 6.0</HazardLevel.stages.stage5.label>
+  <HazardLevel.stages.stage5.description>精英阶段。肉体与能量的融合达到新高度，战斗力大幅提升。</HazardLevel.stages.stage5.description>
+
+  <HazardLevel.stages.stage6.label>HL 7.0</HazardLevel.stages.stage6.label>
+  <HazardLevel.stages.stage6.description>最高等级！骑士与星云气体的完美同步，爆发出极限战斗力。</HazardLevel.stages.stage6.description>
+
+</LanguageData>

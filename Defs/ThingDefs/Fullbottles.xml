@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="Fullbottle_Base" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <techLevel>Industrial</techLevel>
+    <drawerType>MapMeshOnly</drawerType>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>1</stackLimit>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>14</pathCost>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
+  </ThingDef>
+
+  <!-- ================================================================== -->
+  <!-- Rabbit 兔子满装瓶罐                                                  -->
+  <!-- ================================================================== -->
+  <ThingDef ParentName="Fullbottle_Base">
+    <defName>Fullbottle_Rabbit</defName>
+    <label>兔子满装瓶罐</label>
+    <description>蕴含兔子能力的满装瓶罐。摇动后获得超高速和敏捷增益。</description>
+    <graphicData>
+      <texPath>Things/Fullbottle/RabbitFullbottle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="RimworldRider.Fullbottle.CompProperties_Fullbottle">
+        <bottleType>Rabbit</bottleType>
+        <buffHediffDef>FullbottleBuff_Rabbit</buffHediffDef>
+        <bottleSound>Fullbottle_Rabbit</bottleSound>
+      </li>
+    </comps>
+    <orderedTakeGroup>Fullbottles_organic</orderedTakeGroup>
+  </ThingDef>
+
+  <!-- ================================================================== -->
+  <!-- Tank 坦克满装瓶罐                                                    -->
+  <!-- ================================================================== -->
+  <ThingDef ParentName="Fullbottle_Base">
+    <defName>Fullbottle_Tank</defName>
+    <label>坦克满装瓶罐</label>
+    <description>蕴含坦克能力的满装瓶罐。摇动后获得强大防御和护甲增益。</description>
+    <graphicData>
+      <texPath>Things/Fullbottle/TankFullbottle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="RimworldRider.Fullbottle.CompProperties_Fullbottle">
+        <bottleType>Tank</bottleType>
+        <buffHediffDef>FullbottleBuff_Tank</buffHediffDef>
+        <bottleSound>Fullbottle_Tank</bottleSound>
+      </li>
+    </comps>
+    <orderedTakeGroup>Fullbottles_inorganic</orderedTakeGroup>
+  </ThingDef>
+
+</Defs>

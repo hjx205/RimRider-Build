@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <OrderedTakeGroupDef>
+    <defName>Fullbottles_organic</defName>
+    <label>满装瓶罐(有机物)</label>
+    <max>10</max>
+  </OrderedTakeGroupDef>
+
+  <OrderedTakeGroupDef>
+    <defName>Fullbottles_inorganic</defName>
+    <label>满装瓶罐(无机物)</label>
+    <max>10</max>
+  </OrderedTakeGroupDef>
+
+</Defs>

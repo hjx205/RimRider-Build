@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================================================================== -->
+  <!-- Build Rider - Transform Activation Sound                           -->
+  <!-- ================================================================== -->
+  <SoundDef>
+    <defName>BuildRider_Activate</defName>
+    <context>MapOnly</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Fullbottle_Shake</clipPath>
+          </li>
+        </grains>
+        <volumeRange>10~14</volumeRange>
+        <pitchRange>1.0~1.0</pitchRange>
+        <distRange>5~25</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- ================================================================== -->
+  <!-- Build Rider - Best Match Sound                                     -->
+  <!-- (spoken "Best Match!" voice line placeholder)                      -->
+  <!-- ================================================================== -->
+  <SoundDef>
+    <defName>BuildRider_BestMatch</defName>
+    <context>MapOnly</context>
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>BuildDriver_BestMatch</clipPath>
+          </li>
+        </grains>
+        <volumeRange>80~80</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

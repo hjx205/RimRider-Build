@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================================================================== -->
+  <!-- Build Rider Transform Animation Thing                              -->
+  <!-- Spawned on the map at pawn position during transformation           -->
+  <!-- ================================================================== -->
+  <ThingDef>
+    <defName>BuildRider_TransformAnimation</defName>
+    <label>transform animation</label>
+    <description>Transformation animation effect.</description>
+    <thingClass>RimworldRider.BuildDriver.Thing_BuildTransformAnimation</thingClass>
+    <category>Mote</category>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <selectable>false</selectable>
+    <saveCompressible>true</saveCompressible>
+  </ThingDef>
+
+</Defs>
